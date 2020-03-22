@@ -10,7 +10,8 @@
     "build": "babel src --out-dir dist",
     "prepare": "npm run build",
     "test": "jest",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "test:badges": "npm run test:cov && jest-coverage-badges --output ./cov"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "@babel/preset-env": "^7.8.7",
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
+    "jest-coverage-badges": "^1.1.2",
     "sinon": "^9.0.1"
   }
 }
