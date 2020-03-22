@@ -1,0 +1,10 @@
+$errorColor: #F16060;
+$successColor: #0CBEAB;
+$warningColor: #F9C01F;
+
+/* test nicely-formatted, plain exports */
+:export {
+  error: $errorColor;
+  success: $successColor;
+  warning: $warningColor;
+}

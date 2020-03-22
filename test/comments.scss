@@ -1,0 +1,14 @@
+$errorColor: #F16060;
+$successColor: #0CBEAB;
+$warningColor: #F9C01F;
+
+/* test commented exports */
+:export {
+  /**
+    multi-line
+    comment
+  */
+  error: $errorColor;
+  success: $successColor; // variable and comment
+  warning: $warningColor; /* variable and comment, alternate style */
+}
