@@ -1,5 +1,7 @@
 # jest-scss-transform
 
+![Branches coverage](/cov/badge-branches.svg) ![Functions coverage](/cov/badge-functions.svg) ![Lines coverage](/cov/badge-lines.svg) ![Statements coverage](/cov/badge-statements.svg)
+
 Jest transformer for [.scss files](https://sass-lang.com/).
 
 Useful for when you're [sharing variables between Sass and JavaScript](https://itnext.io/sharing-variables-between-js-and-sass-using-webpack-sass-loader-713f51fa7fa0), and makes your snapshots much nicer.
