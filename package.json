@@ -1,0 +1,37 @@
+{
+  "name": "jest-scss-transform",
+  "version": "1.0.0",
+  "description": "jest transform to support variables exported from scss and imported into js",
+  "main": "src/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "keywords": [
+    "jest",
+    "transform",
+    "scss",
+    "sass"
+  ],
+  "author": "Routable Dev <dev@routable.com>",
+  "contributors": [
+    "Emily Kolar <emkolar@gmail.com"
+  ],
+  "license": "ISC",
+  "peerDependencies": {
+    "babel-jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.8.7",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "sinon": "^9.0.1"
+  }
+}

@@ -1,0 +1,12 @@
+# npm
+node_modules
+package-lock.json
+
+# webstorm
+.idea
+
+# test coverage
+/coverage
+
+# builds
+/dist
