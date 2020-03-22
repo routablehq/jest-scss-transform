@@ -12,6 +12,10 @@
     "test": "jest",
     "test:cov": "jest --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/warrenpay/jest-scss-transform.git"
+  },
   "keywords": [
     "jest",
     "transform",
@@ -23,6 +27,10 @@
     "Emily Kolar <emkolar@gmail.com"
   ],
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warrenpay/jest-scss-transform/issues"
+  },
+  "homepage": "https://github.com/warrenpay/jest-scss-transform/issues#readme",
   "peerDependencies": {
     "babel-jest": "^24.8.0"
   },
