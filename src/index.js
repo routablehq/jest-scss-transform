@@ -6,15 +6,15 @@
  * @example
  *
  * // input (contents of .scss file)
- * $blue: #0000FF;
- * $red: #FF0000;
+ * $primaryColor: #0000FF;
+ * $secondaryColor: #FF0000;
  * :export {
- *   primary: $primary;
- *   secondary: $secondary;
+ *   primary: $primaryColor;
+ *   secondary: $secondaryColor;
  * }
  *
  * // output (js object)
- * { primary: '$blue', secondary: '$red' }
+ * { primary: '$primaryColor', secondary: '$secondaryColor' }
  */
 
 const {
