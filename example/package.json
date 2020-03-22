@@ -1,0 +1,36 @@
+{
+  "name": "jest-scss-transform-example",
+  "version": "1.0.0",
+  "description": "jest-scss-transform example",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Routable Dev <dev@routable.com>",
+  "contributors": [
+    "Emily Kolar <emkolar@gmail.com"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.8.7",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-scss-transform": "file:../"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/**/*.test.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.scss$": "<rootDir>/node_modules/jest-scss-transform"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "verbose": true
+  }
+}

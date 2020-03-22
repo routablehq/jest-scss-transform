@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app: createApp matches the snapshot 1`] = `
+<div>
+  <h1
+    style="color: $brandColor;"
+  >
+    My Test App
+  </h1>
+  <div
+    style="background-color: $successColor;"
+  >
+    <p>
+      Test success alert message
+    </p>
+  </div>
+  <img
+    src="$heroImage"
+  />
+</div>
+`;
+
+exports[`app: createHero matches the snapshot 1`] = `
+<img
+  src="$heroImage"
+/>
+`;
+
+exports[`app: createSuccessAlert matches the snapshot 1`] = `
+<div
+  style="background-color: $successColor;"
+>
+  <p>
+    Test success alert message
+  </p>
+</div>
+`;
+
+exports[`app: createTitle matches the snapshot 1`] = `
+<h1
+  style="color: $brandColor;"
+>
+  My Test App
+</h1>
+`;

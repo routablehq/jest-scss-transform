@@ -1,0 +1,9 @@
+$brandColor: #5582FA;
+$successColor: #0CBEAB;
+$heroImage: url('https://some/image/url.png');
+
+:export {
+  brandColor: $brandColor;
+  heroImage: $heroImage;
+  successColor: $successColor;
+}
