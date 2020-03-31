@@ -15,33 +15,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/warrenpay/jest-scss-transform.git"
+    "url": "git+https://github.com/routablehq/jest-scss-transform.git"
   },
   "keywords": [
     "jest",
     "transform",
+    "transformer",
     "scss",
     "sass"
   ],
-  "author": "Routable Dev <dev@routable.com>",
+  "author": "Routable <dev@routable.com>",
   "contributors": [
     "Emily Kolar <emkolar@gmail.com"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/warrenpay/jest-scss-transform/issues"
+    "url": "https://github.com/routablehq/jest-scss-transform/issues"
   },
-  "homepage": "https://github.com/warrenpay/jest-scss-transform/issues#readme",
+  "homepage": "https://github.com/routablehq/jest-scss-transform#readme",
   "peerDependencies": {
     "babel-jest": "^24.8.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.8.7",
-    "babel-jest": "^24.9.0",
-    "jest": "^24.9.0",
-    "jest-coverage-badges": "^1.1.2",
-    "sinon": "^9.0.1"
-  }
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.8.7",
+    "babel-jest": "24.9.0",
+    "jest": "24.9.0",
+    "jest-coverage-badges": "1.1.2",
+    "sinon": "9.0.1"
+  },
+  "dependencies": {}
 }
