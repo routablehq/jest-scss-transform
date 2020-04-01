@@ -1,4 +1,9 @@
-const { createApp, createSuccessAlert, createTitle, createHero } = require('./app');
+const {
+  createApp,
+  createHero,
+  createSuccessAlert,
+  createTitle,
+} = require('./app');
 
 describe('app:', () => {
   describe('createTitle', () => {
