@@ -1,6 +1,6 @@
 {
   "name": "jest-scss-transform",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "jest transform to support variables exported from scss and imported into js",
   "main": "lib/index.js",
   "files": [
