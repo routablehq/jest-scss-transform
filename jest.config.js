@@ -4,13 +4,13 @@ module.exports = {
   automock: false,
   coverageReporters: ['json-summary'],
   testMatch: [
-    '<rootDir>/**/*.test.js'
+    '<rootDir>/**/*.test.js',
   ],
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/example', '<rootDir>/lib'],
   transform: {
     '^.+\\.js$': 'babel-jest',
-    '^.+\\.scss$': path.resolve(__dirname, 'src/index.js')
+    '^.+\\.scss$': path.resolve(__dirname, 'src/index.js'),
   },
   transformIgnorePatterns: ['/node_modules/'],
-  verbose: true
+  verbose: true,
 };

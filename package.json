@@ -4,6 +4,7 @@
   "description": "jest transform to support variables exported from scss and imported into js",
   "main": "lib/index.js",
   "files": [
+    "cov/**/*",
     "lib/**/*",
     "dist/**/*"
   ],
@@ -18,7 +19,7 @@
     "lint:src": "eslint src --ext .js",
     "posttest": "npm run lint",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run test:badges && npm run build",
     "release": "npm publish",
     "release:dry-run": "npm publish --dry-run",
     "test": "jest",
