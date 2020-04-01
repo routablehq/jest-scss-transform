@@ -9,4 +9,5 @@ package-lock.json
 /coverage
 
 # builds
+/lib
 /dist

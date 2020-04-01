@@ -24,7 +24,7 @@ module.exports.getLines = (str) => (
   str
     .split(endOfLineMatcher)
     .map((line) => line.trim())
-    .filter(line => !!line.length)
+    .filter((line) => !!line.length)
 );
 
 module.exports.parseExportsToObject = (lines) => (
