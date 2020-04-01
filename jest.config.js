@@ -6,7 +6,7 @@ module.exports = {
   testMatch: [
     '<rootDir>/**/*.test.js'
   ],
-  testPathIgnorePatterns: ['/node_modules/', '<rootDir>/example', '<rootDir>/dist'],
+  testPathIgnorePatterns: ['/node_modules/', '<rootDir>/example', '<rootDir>/lib'],
   transform: {
     '^.+\\.js$': 'babel-jest',
     '^.+\\.scss$': path.resolve(__dirname, 'src/index.js')

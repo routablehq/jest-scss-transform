@@ -2,13 +2,15 @@
   "name": "jest-scss-transform",
   "version": "1.0.0",
   "description": "jest transform to support variables exported from scss and imported into js",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
-    "dist/**/*"
+    "lib/**/*"
   ],
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --out-dir lib",
     "prepare": "npm run build",
+    "release": "npm publish",
+    "release:dry-run": "npm publish --dry-run",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:badges": "npm run test:cov && jest-coverage-badges --output ./cov"
