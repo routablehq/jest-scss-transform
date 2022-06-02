@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const jest = require('jest');
 const sinon = require('sinon');
 
 const transformer = require('./index');
@@ -21,6 +22,10 @@ const emptyModuleString = 'module.exports = {};';
 
 describe('jest-scss-transform', () => {
   describe('transformer.process', () => {
+    beforeEach(() => {
+      sinon.restore();
+    });
+
     it('returns empty module for file extensions other than .scss', () => {
       expect(transformer.process(contentsIncorrectExt, incorrectExtFile)).toBe(emptyModuleString);
     });
@@ -40,6 +45,14 @@ describe('jest-scss-transform', () => {
     it('processes files with poorly formatted exports', () => {
       expect(transformer.process(contentsFormatting, formattingFile)).toBe(expectedParsed);
     });
+
+    it.each(['27.0.0', '27.5.2', '28.0.0', '28.0.1'])(
+      'returns object with code property for jest versions %s and above',
+      (jestVersion) => {
+        sinon.stub(jest, 'getVersion').returns(jestVersion);
+        expect(transformer.process(contentsBasic, commentsFile)).toEqual({ code: expectedParsed });
+      },
+    );
   });
 
   describe('transformer.getCacheKey', () => {

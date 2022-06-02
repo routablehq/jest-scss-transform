@@ -25,6 +25,7 @@ const {
   hasExports,
   isSupportedFile,
   makeExportsString,
+  makeProcessExports,
   parseExportsToObject,
 } = require('./helpers');
 
@@ -50,7 +51,10 @@ module.exports = {
     }
 
     // generate the module.exports string
-    return makeExportsString(result);
+    const exportString = makeExportsString(result);
+
+    // return the process export
+    return makeProcessExports(exportString);
   },
   getCacheKey() {
     return getCacheKey();
