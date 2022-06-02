@@ -5,6 +5,8 @@
 
 const fs = require('fs');
 const crypto = require('crypto');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const jest = require('jest');
 
 const exportStartRegex = /\n:export.{\n*/;
 const exportEndRegex = /\n*}/;
@@ -43,3 +45,20 @@ module.exports.getCacheKey = () => (
     .update(fs.readFileSync(__filename))
     .digest('hex')
 );
+
+module.exports.makeProcessExports = (exportString) => {
+  // jest.getVersion() returns semantic version, like X.Y.Z
+  // We are only interested in the major version (the "X") in this case.
+  const [major] = jest.getVersion().split('.');
+  const majorInt = parseInt(major, 10);
+
+  if (majorInt < 27) {
+    // For jest versions 26.x.x and bellow, we are fine with just returning
+    // the exports as a string
+    return exportString;
+  }
+
+  // For jest version 27.x.x and above, we want to return an object with a
+  // "code" property, which contains an export string (see here: https://jestjs.io/docs/code-transformation)
+  return { code: exportString };
+};
