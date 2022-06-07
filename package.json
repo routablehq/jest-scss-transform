@@ -63,8 +63,8 @@
     "jest-coverage-badges": "1.1.2",
     "rimraf": "3.0.2",
     "sinon": "9.0.1",
-    "webpack": "4.42.1",
-    "webpack-cli": "3.3.11"
+    "webpack": "4.1.1",
+    "webpack-cli": "4.1.0"
   },
   "dependencies": {}
 }
