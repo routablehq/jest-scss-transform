@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/routablehq/jest-scss-transform#readme",
   "peerDependencies": {
-    "babel-jest": "^24.8.0"
+    "babel-jest": ">=24.8.0"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
